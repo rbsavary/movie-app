@@ -8,7 +8,7 @@ const LandingScreen = () => {
   const [movieResult, setMovieResult] = useState()
 
   const handleSearch = async (searchString) => {
-    const result = await fetch(apiUrl+searchString)
+    const result = await fetch(apiUrl+searchString).then((data) => data.json())
     console.log(result)
 
   }
