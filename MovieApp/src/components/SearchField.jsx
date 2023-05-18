@@ -3,16 +3,20 @@ import {Pressable, TextInput, Text, View} from 'react-native';
 
 const SearchField = () => {
   return (
-    <View>
+    <View style={{
+      flexDirection: 'row',
+      padding: 10,
+    }}>
       <TextInput style={{
         borderColor: 'gray',
         borderRadius: 5,
+        flex: 1,
         borderWidth: 1, 
         margin: 10,
         paddingVertical: 0
       }}/>
       <Pressable style={{
-        marginHorizontal: 10,
+        marginVertical: 10,
         padding: 10,
         backgroundColor: 'gray',
         borderRadius: 5,
