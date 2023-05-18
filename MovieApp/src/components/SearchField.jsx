@@ -15,7 +15,7 @@ const SearchField = ({onSubmit}) => {
       padding: 10,
     }}>
       <TextInput 
-        onTextChange={setSearchString}
+        onChangeText={setSearchString}
         style={{
           borderColor: 'gray',
           borderRadius: 5,
