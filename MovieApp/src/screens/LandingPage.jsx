@@ -2,6 +2,7 @@ import {useState} from 'react'
 import {View} from "react-native"
 import Banner from "../components/Banner"
 import SearchField from "../components/SearchField"
+import Results from '../components/Results'
 
 const apiUrl = 'http://www.omdbapi.com/?apikey=2c0bcb9f&'
 const LandingScreen = () => {
@@ -17,6 +18,7 @@ const LandingScreen = () => {
   <View style={{flex: 1}}>
     <Banner />
     <SearchField onSubmit={handleSearch}/>
+    <Results movie={movieResult} />
   </View>
   )
 }
