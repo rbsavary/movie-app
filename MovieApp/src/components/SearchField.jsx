@@ -1,7 +1,7 @@
 import {Pressable, TextInput, Text, View} from 'react-native';
 
 
-const SearchField = () => {
+const SearchField = ({onSubmit}) => {
   return (
     <View style={{
       flexDirection: 'row',
