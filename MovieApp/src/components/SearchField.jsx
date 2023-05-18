@@ -21,7 +21,7 @@ const SearchField = () => {
         backgroundColor: 'gray',
         borderRadius: 5,
       }}>
-        <Text>Search</Text>
+        <Text style={{color: 'white', fontWeight: '600', fontSize: 18}}>Search</Text>
       </Pressable>
     </View>
   )
