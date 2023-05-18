@@ -1,4 +1,4 @@
-import {StyleSheet, TextInput, View} from 'react-native';
+import {Pressable, TextInput, Text, View} from 'react-native';
 
 
 const SearchField = () => {
@@ -7,8 +7,13 @@ const SearchField = () => {
       <TextInput style={{
         borderColor: 'gray',
         borderRadius: 5,
-        borderWidth: 1
+        borderWidth: 1, 
+        margin: 10,
+        paddingVertical: 0
       }}/>
+      <Pressable>
+        <Text>Search</Text>
+      </Pressable>
     </View>
   )
 }
