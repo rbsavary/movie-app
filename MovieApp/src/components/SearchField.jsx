@@ -11,7 +11,12 @@ const SearchField = () => {
         margin: 10,
         paddingVertical: 0
       }}/>
-      <Pressable>
+      <Pressable style={{
+        marginHorizontal: 10,
+        padding: 10,
+        backgroundColor: 'gray',
+        borderRadius: 5,
+      }}>
         <Text>Search</Text>
       </Pressable>
     </View>
