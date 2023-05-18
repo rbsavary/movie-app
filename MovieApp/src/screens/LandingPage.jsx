@@ -10,6 +10,7 @@ const LandingScreen = () => {
 
   const handleSearch = async (searchString) => {
     const result = await fetch(apiUrl+searchString).then((data) => data.json())
+    console.log(result)
     setMovieResult(result)
 
   }
@@ -18,7 +19,9 @@ const LandingScreen = () => {
   <View style={{flex: 1}}>
     <Banner />
     <SearchField onSubmit={handleSearch}/>
-    <Results movie={movieResult} />
+    {movieResult?.Title &&
+      <Results movie={movieResult} />
+    }
   </View>
   )
 }
