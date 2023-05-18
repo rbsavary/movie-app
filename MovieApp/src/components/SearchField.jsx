@@ -1,10 +1,14 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, TextInput, View} from 'react-native';
 
 
 const SearchField = () => {
   return (
     <View>
-      <Text>Search Field</Text>
+      <TextInput style={{
+        borderColor: 'gray',
+        borderRadius: 5,
+        borderWidth: 1
+      }}/>
     </View>
   )
 }
