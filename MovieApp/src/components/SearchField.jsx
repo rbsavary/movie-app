@@ -14,7 +14,7 @@ const SearchField = ({onSubmit}) => {
       flexDirection: 'row',
       padding: 10,
     }}>
-      <TextInput 
+      <TextInput
         onChangeText={setSearchString}
         style={{
           borderColor: 'gray',
