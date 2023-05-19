@@ -14,7 +14,7 @@ const Results = ({movie}) => {
 }
 
 const styles = StyleSheet.create({
-  card: {alignItems: 'center', flexDirection: 'row', padding: 20, margin: 20, borderColor: 'gray', borderWidth: 1, },
+  card: {alignItems: 'center', flexDirection: 'row', padding: 20, margin: 20, borderColor: 'gray', borderWidth: 1, borderRadius: 10},
   image: {height: 150, width: 100},
   titleText: {
     fontSize: 18,

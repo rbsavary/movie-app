@@ -10,7 +10,6 @@ const LandingScreen = () => {
 
   const handleSearch = async (searchString) => {
     const result = await fetch(`http://www.omdbapi.com/?t=${searchString}&apikey=2c0bcb9f`).then((data) => data.json())
-    console.log(result)
     setMovieResult(result)
 
   }
